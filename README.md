@@ -33,7 +33,7 @@ Interceptor executes its before() method and its corresponding code here and pri
 This is not desirable as I don't want to execute my before() method except call to any Controller.
 
 
-Following are the outputs:
+Actual outputs:
 ```
 Running application...
 Grails application running at http://localhost:8080/demoInterceptorApp in environment: development
@@ -43,3 +43,10 @@ Testing....
 controllerName= static, actionName= js,  params = [controller:static, format:js, action:js, id:file1] //undesirable
 ```
 
+Expected outputs:
+```
+Running application...
+Grails application running at http://localhost:8080/demoInterceptorApp in environment: development
+controllerName= demo, actionName= test,  params = [controller:demo, format:null, action:test]
+Testing....
+```
