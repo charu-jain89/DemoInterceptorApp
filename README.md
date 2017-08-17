@@ -34,11 +34,12 @@ This is not desirable as I don't want to execute my before() method except call 
 
 
 Following are the outputs:
-|Running application...
+```
+Running application...
 Grails application running at http://localhost:8080/demoInterceptorApp in environment: development
 controllerName= null, actionName= null,  params = [:] // undesirable
 controllerName= demo, actionName= test,  params = [controller:demo, format:null, action:test]
 Testing....
 controllerName= static, actionName= js,  params = [controller:static, format:js, action:js, id:file1] //undesirable
-
+```
 
